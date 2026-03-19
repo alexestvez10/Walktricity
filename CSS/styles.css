@@ -1,0 +1,232 @@
+
+/* Paleta inspirada en energía sustentable: negro, azules y blanco */
+:root {
+  --primary: black; /* negro */
+  --secondary: rgb(25, 25, 112); 
+  --theerty: rgb(64, 134, 168); /* azul claro */
+  --dark: #1a1a1a;
+  --light: #f9f9f9;
+  --lighting:rgb(31, 58, 147);
+  --primary-low: rgba(0, 0, 0, 0.9); /*negro transparene*/
+  --secundary-low: rgba(25, 25, 112, 0.9); /*azul transparene*/
+}
+
+
+
+body {
+  /*background: linear-gradient(to bottom, var(--primary), var(--secondary));*/
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+.titulo {
+  background: linear-gradient(270deg, var(--lighting), var(--theerty), var(--lighting));
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 10s ease infinite;
+
+  font-family: fantasy;
+  font-size: 5rem;
+  width: auto;
+  display:flex;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.logo {
+  padding:0 255px 0 0;
+  width: 160px;
+}
+.logo img {
+  height: auto;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+.hero {
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.family {
+  background: linear-gradient(270deg, var(--light), var(--primary), var(--light));
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 10s ease infinite;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 3rem;
+  height: 130px;
+  width: auto;
+  display:flex;
+}
+
+.hero-family {
+  background: linear-gradient(to bottom, var(--secondary), var(--primary));
+  color: white;
+  text-align: center;
+  padding: 25px 23%;
+ 
+}
+.hero-family-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  background-size: cover;
+  height: auto;
+  color: var(--light);
+}
+.step-family {
+  background: var(--light);
+  color: var(--dark);
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: 250px;
+  border: 3px solid var(--dark);
+}
+.navbar-family {
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+  
+}
+.step-family h1 {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  color: var(--secondary);
+}
+.btn {
+  background: white;
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--lighting);
+  color: white;
+}
+
+.section {
+  padding: 80px 0.5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.section.alt {
+  background: var(--light);
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background:linear-gradient(to bottom, var(--primary), var(--secondary));
+  background-size: cover;
+  height: 500px;
+  color: var(--light);
+}
+
+.steps h1 {
+  background: linear-gradient(270deg, var(--lighting), var(--theerty), var(--lighting));
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 10s ease infinite;
+  font-family: fantasy;
+
+  font-size: 3rem;
+  order: -1;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.step { 
+  color: var(--primary);
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: 250px;
+  background:var(--light) ;
+  border: 3px solid var(--dark);
+}
+
+.piezoA {
+  width: 170px;
+  height: auto;
+  justify-content: center;
+}
+
+.piezoB {
+  width: 200px;
+  height: auto;
+  justify-content: center;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  border: 2px solid var(--lighting);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background: var(--dark);
+  color: white;
+  text-align: justify;
+  padding: 20px;
+}
