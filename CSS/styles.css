@@ -230,3 +230,73 @@ body {
   text-align: justify;
   padding: 20px;
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .hero {
+    padding: 15px 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .section {
+    padding: 40px 10px;
+    font-size: 1rem;
+  }
+
+  .steps {
+    height: auto;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .product-grid {
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-family {
+    padding: 15px 10px;
+  }
+
+  .hero-family-text {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .step-family {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 15px 10px;
+  }
+}
+
